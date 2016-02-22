@@ -50,7 +50,10 @@ namespace PictureViewer
             // Show the color dialog box. If the user clicks OK, change the 
             // PictureBox control's background to the color the user chose. 
             if (colorDialog1.ShowDialog() == DialogResult.OK)
-                pictureBox1.BackColor = colorDialog1.Color;
+                pictureBox1.BackColor = backgroundButton.BackColor = checkBox1.BackColor =  
+                closeButton.BackColor = clearButton.BackColor = showButton.BackColor = 
+                colorDialog1.Color;
+                
         }
 
         private void closeButton_Click(object sender, EventArgs e)

@@ -57,7 +57,7 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 88.46154F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.53846F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(620, 312);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(712, 332);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // pictureBox1
@@ -67,7 +67,7 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(614, 270);
+            this.pictureBox1.Size = new System.Drawing.Size(706, 287);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -75,9 +75,11 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox1.Location = new System.Drawing.Point(3, 279);
+            this.checkBox1.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.ForeColor = System.Drawing.Color.Fuchsia;
+            this.checkBox1.Location = new System.Drawing.Point(3, 296);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(88, 30);
+            this.checkBox1.Size = new System.Drawing.Size(102, 33);
             this.checkBox1.TabIndex = 1;
             this.checkBox1.Text = "Stretch";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -91,17 +93,19 @@
             this.flowLayoutPanel1.Controls.Add(this.closeButton);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(97, 279);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(111, 296);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(520, 30);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(598, 33);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
             // showButton
             // 
             this.showButton.AutoSize = true;
-            this.showButton.Location = new System.Drawing.Point(406, 3);
+            this.showButton.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showButton.ForeColor = System.Drawing.Color.Fuchsia;
+            this.showButton.Location = new System.Drawing.Point(476, 3);
             this.showButton.Name = "showButton";
-            this.showButton.Size = new System.Drawing.Size(111, 27);
+            this.showButton.Size = new System.Drawing.Size(119, 30);
             this.showButton.TabIndex = 0;
             this.showButton.Text = "Show a picture";
             this.showButton.UseVisualStyleBackColor = true;
@@ -110,9 +114,11 @@
             // clearButton
             // 
             this.clearButton.AutoSize = true;
-            this.clearButton.Location = new System.Drawing.Point(278, 3);
+            this.clearButton.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearButton.ForeColor = System.Drawing.Color.Fuchsia;
+            this.clearButton.Location = new System.Drawing.Point(338, 3);
             this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(122, 27);
+            this.clearButton.Size = new System.Drawing.Size(132, 30);
             this.clearButton.TabIndex = 1;
             this.clearButton.Text = "Clear the picture";
             this.clearButton.UseVisualStyleBackColor = true;
@@ -121,9 +127,11 @@
             // backgroundButton
             // 
             this.backgroundButton.AutoSize = true;
-            this.backgroundButton.Location = new System.Drawing.Point(87, 3);
+            this.backgroundButton.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backgroundButton.ForeColor = System.Drawing.Color.Fuchsia;
+            this.backgroundButton.Location = new System.Drawing.Point(139, 3);
             this.backgroundButton.Name = "backgroundButton";
-            this.backgroundButton.Size = new System.Drawing.Size(185, 27);
+            this.backgroundButton.Size = new System.Drawing.Size(193, 30);
             this.backgroundButton.TabIndex = 2;
             this.backgroundButton.Text = "Set the background colour";
             this.backgroundButton.UseVisualStyleBackColor = true;
@@ -132,9 +140,10 @@
             // closeButton
             // 
             this.closeButton.AutoSize = true;
-            this.closeButton.Location = new System.Drawing.Point(6, 3);
+            this.closeButton.ForeColor = System.Drawing.Color.Fuchsia;
+            this.closeButton.Location = new System.Drawing.Point(58, 3);
             this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(75, 27);
+            this.closeButton.Size = new System.Drawing.Size(75, 29);
             this.closeButton.TabIndex = 3;
             this.closeButton.Text = "Close";
             this.closeButton.UseVisualStyleBackColor = true;
@@ -149,10 +158,14 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AcceptButton = this.showButton;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(620, 312);
+            this.CancelButton = this.closeButton;
+            this.ClientSize = new System.Drawing.Size(712, 332);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Font = new System.Drawing.Font("MV Boli", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Name = "Form1";
             this.Text = "Picture Viewer";
             this.tableLayoutPanel1.ResumeLayout(false);
