@@ -106,5 +106,17 @@ namespace Maths_Quiz
             }
 
         }
+
+        private void answer_Enter(object sender, EventArgs e)
+        {
+            // select the whole andwer in the NumericUpDown control.
+            NumericUpDown answerBox = sender as NumericUpDown;
+
+            if(answerBox != null)
+            {
+                int lengthOfAnswer = answerBox.Value.ToString().Length;
+                answerBox.Select(0, lengthOfAnswer);
+            }
+        }
     }
 }
