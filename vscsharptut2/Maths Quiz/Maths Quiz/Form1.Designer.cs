@@ -50,7 +50,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.divideRightLabel = new System.Windows.Forms.Label();
-            this.deivideLeftLabel = new System.Windows.Forms.Label();
+            this.divideLeftLabel = new System.Windows.Forms.Label();
             this.startButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.sum)).BeginInit();
@@ -264,15 +264,15 @@
             this.divideRightLabel.Text = "?";
             this.divideRightLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // deivideLeftLabel
+            // divideLeftLabel
             // 
-            this.deivideLeftLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deivideLeftLabel.Location = new System.Drawing.Point(50, 248);
-            this.deivideLeftLabel.Name = "deivideLeftLabel";
-            this.deivideLeftLabel.Size = new System.Drawing.Size(60, 50);
-            this.deivideLeftLabel.TabIndex = 17;
-            this.deivideLeftLabel.Text = "?";
-            this.deivideLeftLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.divideLeftLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.divideLeftLabel.Location = new System.Drawing.Point(50, 248);
+            this.divideLeftLabel.Name = "divideLeftLabel";
+            this.divideLeftLabel.Size = new System.Drawing.Size(60, 50);
+            this.divideLeftLabel.TabIndex = 17;
+            this.divideLeftLabel.Text = "?";
+            this.divideLeftLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // startButton
             // 
@@ -301,7 +301,7 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.divideRightLabel);
-            this.Controls.Add(this.deivideLeftLabel);
+            this.Controls.Add(this.divideLeftLabel);
             this.Controls.Add(this.product);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
@@ -355,7 +355,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label divideRightLabel;
-        private System.Windows.Forms.Label deivideLeftLabel;
+        private System.Windows.Forms.Label divideLeftLabel;
         private System.Windows.Forms.Button startButton;
         private System.Windows.Forms.Timer timer1;
     }

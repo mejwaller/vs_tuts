@@ -22,6 +22,14 @@ namespace Maths_Quiz
         int minuend;
         int subtrahend;
 
+        //ints for multiplication problem
+        int multiplicand;
+        int multiplier;
+
+        //ints for division problem
+        int dividend;
+        int divisor;
+
         //integer to keep track of remaining time
         int timeLeft;
 
@@ -60,6 +68,19 @@ namespace Maths_Quiz
             minusRightLabel.Text = subtrahend.ToString();
             difference.Value = 0;
 
+            //fill in multiplication problem
+            multiplicand = randomizer.Next(2, 11);
+            multiplier = randomizer.Next(2, 11);
+            timesLeftLabel.Text = multiplicand.ToString();
+            timesRightLabel.Text = multiplier.ToString();
+
+            //fill in division problem
+            divisor = randomizer.Next(2, 11);
+            int tempQuot = randomizer.Next(2, 11);
+            dividend = divisor * tempQuot;
+            divideLeftLabel.Text = dividend.ToString();
+            divideRightLabel.Text = divisor.ToString();
+
             //start the timer
             timeLeft = 30;
             timeLabel.Text = "30 seconds";
@@ -74,7 +95,9 @@ namespace Maths_Quiz
         private bool CheckTheAnswer()
         {
             if ((addend1 + addend2 == sum.Value)
-                && (minuend - subtrahend == difference.Value))
+                && (minuend - subtrahend == difference.Value)
+                && (multiplicand * multiplier == product.Value)
+                && (dividend/divisor == quotient.Value))
                 return true;
             else
                 return false;
@@ -115,6 +138,8 @@ namespace Maths_Quiz
                 MessageBox.Show("You didn't finish in time.", "Sorry!");
                 sum.Value = addend1 + addend2;
                 difference.Value = minuend - subtrahend;
+                product.Value = multiplicand * multiplier;
+                quotient.Value = dividend / divisor;
                 startButton.Enabled = true;
             }
 
