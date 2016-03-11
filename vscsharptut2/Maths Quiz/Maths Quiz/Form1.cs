@@ -105,6 +105,7 @@ namespace Maths_Quiz
 
         private void startButton_Click(object sender, EventArgs e)
         {
+            timeLabel.BackColor = Color.White;
             StartTheQuiz();
             startButton.Enabled = false;
         }
@@ -128,6 +129,10 @@ namespace Maths_Quiz
                 //time left label
                 timeLeft--;
                 timeLabel.Text = timeLeft + " seconds";
+                if(timeLeft < 6)
+                {
+                    timeLabel.BackColor = Color.Red;
+                }
             }
             else
             {
@@ -156,5 +161,44 @@ namespace Maths_Quiz
                 answerBox.Select(0, lengthOfAnswer);
             }
         }
+
+        private void check_addition(object sender, EventArgs e)
+        {
+            if (addend1 + addend2 == sum.Value)
+            {
+                //play sound
+                System.Media.SystemSounds.Asterisk.Play();
+            }
+        }
+
+        private void check_subtraction(object sender, EventArgs e)
+        {
+            if(minuend - subtrahend == difference.Value)
+            {
+                //play sound
+                System.Media.SystemSounds.Asterisk.Play();
+            }
+        }
+
+        private void check__multiplication(object sender, EventArgs e)
+        {
+            if (multiplicand * multiplier == product.Value)
+            {
+                //play sound
+                System.Media.SystemSounds.Asterisk.Play();
+            }
+
+        }
+
+        private void check_division(object sender, EventArgs e)
+        {
+            if (dividend / divisor == quotient.Value)
+            {
+                //play sound
+                System.Media.SystemSounds.Asterisk.Play();
+            }
+
+        }
+
     }
 }
