@@ -13,6 +13,15 @@ namespace MatchingGame
     public partial class Form1 : Form
     {
 
+        // firstClicked points to the first Label control  
+        // that the player clicks, but it will be null  
+        // if the player hasn't clicked a label yet
+        Label firstClicked = null;
+
+        // secondClicked points to the second Label control  
+        // that the player clicks
+        Label secondClicked = null;
+
         // Use this Random object to choose random icons for the squares
         Random random = new Random();
 
@@ -76,7 +85,17 @@ namespace MatchingGame
                 if (clickedLabel.ForeColor == Color.Black)
                     return;
 
-                clickedLabel.ForeColor = Color.Black;
+                // If firstClicked is null, this is the first icon  
+                // in the pair that the player clicked, 
+                // so set firstClicked to the label that the player  
+                // clicked, change its color to black, and return 
+                if (firstClicked == null)
+                {
+                    firstClicked = clickedLabel;
+                    firstClicked.ForeColor = Color.Black;
+
+                    return;
+                }
             }
         } 
     }
